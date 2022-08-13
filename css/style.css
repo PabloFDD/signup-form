@@ -1,5 +1,5 @@
 .container{
-    width: 80%;
+    width: 85%;
     height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -7,14 +7,14 @@
 }
 
 .main-section{
-    width: 50%;
+    width: 45%;
+    margin-right: 40px;
 }
 
 .main-title{
     font-size: 50px;
     line-height: 60px;
     color: #fff;
-    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     margin-bottom: 30px;
 }
@@ -22,6 +22,79 @@
 .main-paragraph{
     font-size: 16px;
     color: #fff;
-    font-family: 'Poppins', sans-serif;
+}
 
+.main-form{
+    width: 550px;
+    height: 480px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    border-radius: 10px;
+}
+
+.main-aside{
+    width: 60%;
+}
+
+.aside-offer{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    color: #fff;
+    width: 550px;
+}
+
+.bolded{
+    font-weight: bold;
+}
+
+.form-input{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: 0.3px hsl(248, 32%, 49%) solid;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.form-btn{
+    margin-top: 20px;
+    padding: 16px;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 0 #000;
+    cursor: pointer;
+}
+
+.form-paragraph{
+    margin-top: 20px;
+    font-size: 11px;
+    text-align: center;
+    color:hsl(246, 25%, 77%);
+}
+
+.terms{
+    color: hsl(0, 100%, 74%);
+    cursor: pointer;
+}
+
+.spanError{
+    text-align: end;
+    color:hsl(0, 100%, 74%);
+    font-size: 11px;
+    font-style: italic;
+    display: none;
+}
+
+.invisible::placeholder{
+    color: transparent;
 }
