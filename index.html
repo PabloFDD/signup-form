@@ -26,20 +26,26 @@
   </section>
   <aside class="main-aside">
 
-    <div class="aside-offer">Try it free 7 days then $20/mo. thereafter</div>
+    <div class="aside-offer"><span class="bolded">Try it free 7 days</span> then $20/mo. thereafter</div>
     <form class="main-form">
-      <label for="fname" class="form-label"></label>
-      <input type="text" class="form-input" placeholder="First Name">
-      <label for="lname" class="form-label"></label>
-      <input type="text" class="form-input" placeholder="Last Name">
-      <label for="email" class="form-label"></label>
-      <input type="email" class="form-input" placeholder="Email Adress">
-      <label for="password" class="form-label"></label>
-      <input type="password" class="form-input" placeholder="Password">
-    </form>
-    Claim your free trial 
+      <fieldset>
+        <label for="fname" class="form-label"></label>
+        <input id="fname" type="text" class="form-input" placeholder="First Name" required>
+        <span class="spanError"></span>
+        <label for="lname" class="form-label"></label>
+        <input id="lname" type="text" class="form-input" placeholder="Last Name" required>
+        <span class="spanError">/span>
+        <label for="email" class="form-label"></label>
+        <input id="email" type="email" class="form-input" placeholder="Email Adress" required>
+        <span class="spanError"></span>
+        <label for="password" class="form-label"></label>
+        <input  id="password" type="password" class="form-input" placeholder="Password" required>
+        <span class="spanError"></span>
+      </fieldset>
+      <button class="form-btn">Claim your free trial </button>
 
-    By clicking the button, you are agreeing to our Terms and Services
+      <p class="form-paragraph">By clicking the button, you are agreeing to our <span class="terms bolded">Terms and Services</span></p>
+      </form>
     </aside>
   </main>
   <footer>
@@ -48,5 +54,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
