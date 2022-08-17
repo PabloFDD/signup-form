@@ -25,8 +25,8 @@
 }
 
 .main-form{
-    width: 550px;
-    height: 480px;
+    width: 530px;
+    height: 450px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -39,13 +39,16 @@
 }
 
 .aside-offer{
-    text-align: center;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 15px;
     background-color: hsl(248, 32%, 49%);
     border-radius: 10px;
+    width: 530px;
+}
+
+.offer-paragraph{
+    text-align: center;
     color: #fff;
-    width: 550px;
 }
 
 .bolded{
@@ -57,14 +60,14 @@
     width: 100%;
     padding: 15px;
     border: 0.3px hsl(248, 32%, 49%) solid;
-    margin-top: 30px;
+    margin-top: 25px;
     border-radius: 5px;
     font-weight: bold;
 }
 
 .form-btn{
     margin-top: 20px;
-    padding: 16px;
+    padding: 12px;
     background-color: hsl(154, 59%, 51%);
     color: #fff;
     font-size: 16px;
@@ -87,7 +90,7 @@
     cursor: pointer;
 }
 
-.spanError{
+.spanError, .spanError2, .spanError3, .spanError4{
     text-align: end;
     color:hsl(0, 100%, 74%);
     font-size: 11px;
@@ -97,4 +100,64 @@
 
 .invisible::placeholder{
     color: transparent;
+}
+
+.iconError{
+    background-image: url(/images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    
+}
+
+.email::placeholder{
+    color:hsl(0, 100%, 74%);
+}
+
+
+@media only screen and (max-width: 375px){
+    .container{
+        height: 100%;
+        display: block;
+    }
+
+    .main-section{
+        width: 100%;
+    }
+
+    .main-title{
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 25px;
+        margin-top: 90px;
+        text-align: center;
+    }
+
+    .main-paragraph{
+        text-align: center;
+        line-height: 25px;
+        margin-bottom: 50px;
+    }
+
+    .aside-offer{
+        padding: 20px;
+        width: 320px;
+    }
+    .offer-paragraph{
+        width: 244px;
+        margin: auto;
+    }
+
+    .main-form{
+        width: 320px;
+    }
+
+    .form-input{
+        display: block;
+        width: 100%;
+        padding: 15px;
+        border: 0.1px hsl(246, 25%, 77%) solid;
+        margin-top: 25px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
 }
